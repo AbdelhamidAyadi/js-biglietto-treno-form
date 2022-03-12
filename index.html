@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <title>Biglietto Treno</title>
+</head>
+
+<body>
+
+    <main >
+       <div>
+        <div>
+            <h2 class="text-light text-center m-5">
+                CALCOLA IL PREZZO DEL TUO BIGLIETTO
+            </h2>
+        </div>
+        <div class="container_costum text-center ">
+            
+            <div class="d-flex justify-content-around mb-5">
+                <div>
+                    <p>Nome Cognome</p>
+                    <input id="name" type="text">
+                </div>
+
+                <div>
+                    <p>Km da percorrere</p>
+                    <input id="distance" type="number">
+                </div>
+
+                <div>
+                    <p>Fascia d'età</p>
+                    <select name="age" id="age">
+                        <option value="maggiorenne">Maggiorenne</option>
+                        <option value="minorenne">Minorenne</option>
+                        <option value="over65">Over 65</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <button class="rounded-3 text-danger fs-5 fw-bolder" id="genera">Genera</button>
+                <button class="ms-5 rounded-3 text-danger fs-5 fw-bolder" id="annulla">Annulla</button>
+
+            </div>
+        </div>
+       </div>
+
+        <div id="biglietto" class="d-none">
+            <div>
+                <h2 class="text-light text-center m-5">
+                    IL TUO BIGLIETTO
+                </h2>
+            </div>
+
+            <div class="container_costum  ">
+                <div class="text-start mb-3">
+                    <h3>DETTAGLIO PASSEGGERI</h3>
+                </div>
+                <div class="row d-flex text-start border_costum ">
+                    <div class="col col-3 d-flex justify-content-between flex-column height_costum background_costum ">
+                        <h3 class="fs-5 text-start">NOME PASSEGGERO</h3>
+                        <p id="ticketName"></p>
+                    </div>
+                    <div class="col col-9 d-flex justify-content-between text-start">
+                        <div class="d-flex justify-content-between flex-column height_costum">
+                            <h5>Offerta</h5>
+                            <p id="offerta"></p>
+                        </div>
+                        <div class="d-flex justify-content-between flex-column height_costum">
+                            <h5>Carozza</h5>
+                            <p id="carozza"></p>
+                        </div>
+                        <div class="d-flex justify-content-between flex-column height_costum">
+                            <h5>Codice CP</h5>
+                            <p id="codiceCp"></p>
+                        </div>
+                        <div class="d-flex justify-content-between flex-column height_costum">
+                            <h5>Costo biglietto</h5>
+                            <p id="ticketPrice"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+    <script type="text/javascript" src="./asset/js/main.js"></script>
+
+</body>
+
+</html>
